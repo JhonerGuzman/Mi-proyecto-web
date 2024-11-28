@@ -4,7 +4,10 @@
     box-sizing: border-box;
   }
   body {
-    background: linear-gradient(rgb(80, 212, 168), rgb(218, 255, 255));
+    background: linear-gradient(to left,rgb(162, 246, 249), rgb(91, 235, 91));
+    margin: 40px;
+    min-height: 100vh;
+    
   }
   h1 {
     text-align: center;
@@ -57,6 +60,73 @@
   table { border-collapse: collapse; width: 100%; } td, th { border:
     1px solid black; text-align: left; padding: 8px; }
 
+  /*Estilos de principal HTML*/
+  header {
+     background-color: yellow;
+     text-align: center;
+     border-radius: 10px;
+     padding: 1rem;
+     grid-area:"header";
+  }
+  nav {
+    background-color: BLUE;
+     text-align: center;
+     border-radius: 10px;
+     padding: O.5rem;
+     color: white;
+     grid-area: "nav" ;
+}
+  main {
+  background-color: pink;
+     text-align: center;
+     border-radius: 10px;
+     padding: 1rem;
+     grid-area: "main" ;
+    
+    }
+    aside {
+      background-color: palevioletred;
+     text-align: center;
+     border-radius: 10px;
+     padding: 1rem;
+     grid-area:"aside";
 
- 
-  
+    }
+  footer{
+    background-color: purple;
+     text-align: center;
+     border-radius: 10px;
+     padding: 1rem;
+     color: white;
+     grid-area:"footer";
+    }
+
+    /*CSS GRIP*/
+.page {
+      display: grid;
+      gap:2px;
+      grid-template: 
+      "contenido" 50px
+      "menu"20px
+      "encabezado"auto
+      "submenu"100px
+      "pie"50px;
+
+      @media (min-width: 768px){
+        grid-template:
+        "encabezado encabezado encabezado"  100px
+        "menu       menu       menu"50px
+        "contenido  contenido  submenu" auto
+        "pie        pie        pie" 50px /
+        auto  auto 30%;
+        
+      }
+      @media(min-width:1024px) {
+        grid-template:
+        "encabezado encabezado encabezado encabezado encabezado"  100px
+        "menu       contenido  contenido  contenido  submenu" auto   
+        "pie        pie        pie"       pie        pie" 50px 
+        / 20% auto  auto  auto 20%;
+     }
+      
+}
