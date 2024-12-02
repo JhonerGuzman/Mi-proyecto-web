@@ -25,14 +25,14 @@
    h3{
     color: beige;
    }
-   input[type="text"], input[type="email"] {
+   input[type="text"], input[type="email"], input[type="number"] {
           min-width: 100%;
           min-height: 30px;
           margin-bottom: 5px;
           border-radius: 10px;
           border: 2px orange solid; 
    }
-   input[type="text"]:hover, input[tyoe="email"]:hover {
+   input[type="text"]:hover, input[type="email"]:hover, input[="number"]:hover {
        border:2px rgb(162, 246, 249) solid;
        box-shadow: 5px 5px 10px #555;
    }
