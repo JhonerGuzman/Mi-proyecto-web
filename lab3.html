@@ -10,15 +10,17 @@
     <h1>Funciones</h1>
     <h2>Operaciones Matematicas</h2>
     <form action="#" method="get">
-        <label for="n1">Primer Valor:</label>
+        <label for="n1">primer valor:</label>
         <input type="number" name="n1" id="n1">
-        <label for="n2">Segundo Valor:</label>
-        <input type="number" name="n2" id="n2"> 
-        <input type="button" class="button" value="Suma">
-        <input type="button" class="button" value="Resta">
-        <input type="button" class="button" value="Multiplicacion">
-        <input type="button" class="button" value="Division">
-     
+        <label for="n2">segundo valor:</label>
+        <input type="number" name="n2" id="n2">
+        <div>
+            <label id="resul"></label>
+        </div>
+        <input type="button" class="button" value="suma" onclick="fsumar()">
+        <input type="button" class="button" value="resta" onclick="frestar()">
+        <input type="button" class="button" value="multiplicacion" onclick="fmultiplicar()">
+        <input type="button" class="button" value="division" onclick="fdividir()">
     </form>
     <script type="module" src="main.js"></script>
 </body>
